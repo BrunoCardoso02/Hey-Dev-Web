@@ -7,6 +7,7 @@ import Link from 'next/link';
 const Cadastro: React.FC = () => {
     return (
         <>
+            <title>HeyDev | SignUp</title>
             <section>
                 <aside>
                     <h2>Bem-vindo!</h2>

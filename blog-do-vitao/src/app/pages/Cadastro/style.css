@@ -9,7 +9,7 @@ section {
     height: 500px;
     margin: auto;
     margin-top: 10%;
-    box-shadow: 1px 1px 15px 1px;
+    box-shadow: 0 5px 20px rgba(0.5, 0.5, 0.5, 1);
 }
 section aside {
     position: relative;
