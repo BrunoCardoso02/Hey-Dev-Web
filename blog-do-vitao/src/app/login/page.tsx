@@ -1,11 +1,12 @@
 import React from 'react';
-import '@/app/pages/Login/style.css'
+import '@/app/login/style.css'
 
 
 
 const Login: React.FC = () => {
   return (
     <>
+        <title>HeyDev | Login</title>
         <section>
             <h2>Bem vindo de volta!</h2>
             <form action="">

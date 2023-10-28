@@ -1,6 +1,7 @@
 import React from 'react';
-import '@/app/pages/Cadastro/style.css'
+import '@/app/cadastro/style.css'
 import Link from 'next/link';
+
 
 // import { Container } from './styles';
 
@@ -12,7 +13,7 @@ const Cadastro: React.FC = () => {
                 <aside>
                     <h2>Bem-vindo!</h2>
                     <p>Já possui uma conta?</p>
-                    <div><p>Sign In</p></div>
+                    <Link href={'/login'} className='containerLink'><p>Sign In</p></Link>
                 </aside>
                 <main>
                     <h1>Junte-se a nós</h1>

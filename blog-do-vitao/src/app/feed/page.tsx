@@ -3,8 +3,6 @@ import NavBar from '@/app/components/NavBar/page';
 import SideBar from '@/app/components/SideBar/page';
 import '@/app/pages/Feed/style.css'
 
-// import { Container } from './styles';
-
 const Feed: React.FC = () => {
   return (
     <>

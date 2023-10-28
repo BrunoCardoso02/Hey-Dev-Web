@@ -23,7 +23,7 @@ section aside {
     gap: 20px;
     color: #fff;
 }
-section aside div {
+.containerLink {
     display: flex; 
     align-items: center; 
     justify-content: center;
@@ -36,8 +36,9 @@ section aside div {
     font-size: large;
     text-align: center;
     color: #fff;
+    text-decoration: none;
 }
-section aside div:hover {
+.containerLink:hover {
     cursor: pointer;
     border: 2px solid #fff;
     font-weight: bold;
