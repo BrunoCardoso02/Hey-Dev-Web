@@ -6,12 +6,6 @@ import Login from './login/page';
 
 export default function Home() {
   return (
-   /* {//<main>
-     // <NavBar/>
-     // <Feed/>
-      //</main>
-    }*/
-    //<Cadastro/>
-    <Login/>
+    <Cadastro/>
   )
 }
