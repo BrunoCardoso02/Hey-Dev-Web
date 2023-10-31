@@ -1,5 +1,6 @@
 import React from 'react';
 import '@/app/login/style.css'
+import Button from '../components/Button';
 
 
 
@@ -7,12 +8,12 @@ const Login: React.FC = () => {
   return (
     <>
         <title>HeyDev | Login</title>
-        <section>
+        <section className='containerLogin'>
             <h2>Bem vindo de volta!</h2>
             <form action="">
                 <input type="text" placeholder='Email' />
                 <input type="password" placeholder='Senha' />
-                <button>Login</button>
+                <Button title="Sign In"/>
             </form>
         </section>
     </>

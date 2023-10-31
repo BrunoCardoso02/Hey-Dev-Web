@@ -1,7 +1,7 @@
 body {
     background-color: #73A0D7;
 }
-section {
+.containerCadastro {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -11,7 +11,7 @@ section {
     margin-top: 10%;
     box-shadow: 0 5px 20px rgba(0.5, 0.5, 0.5, 1);
 }
-section aside {
+.containerCadastro aside {
     position: relative;
     height: 100%;
     width: 42%;
@@ -44,7 +44,7 @@ section aside {
     font-weight: bold;
     transition: 0.2s ease;
 }
-section main {
+.container-Principal {
     position: relative;
     height: 100%;
     width: 58%;
@@ -55,10 +55,10 @@ section main {
     justify-content: center;
     gap: 20px;
 }
-section main h1 {
+.container-Principal h1 {
     color: #2E7BB4;
 }
-section main form {
+.container-Principal form {
     display: flex;
     flex-direction: column;
     gap: 20px;

@@ -1,7 +1,7 @@
 body {
     background-color: #73A0D7;
 }
-section {
+.containerLogin {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -15,11 +15,11 @@ section {
     justify-content: center;
     gap: 30px;
 }
-section h2 {
+.containerLogin h2 {
     text-align: center;
     color: #2E7BB4;
 }
-section form {
+.containerLogin form {
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -37,20 +37,3 @@ input {
     border-radius: 5px;
     border-left: 5px solid #73A0D7;
 }
-
-button {
-    background-color: #73A0D7;
-    border: none;
-    color: #fff;
-    padding: 10px;
-    border-radius: 8px;
-    font-size: large;
-    width: 80%;
-}
-button:hover {
-    cursor: pointer;
-}
-button:focus {
-    background-color: #1f639b
-}
-

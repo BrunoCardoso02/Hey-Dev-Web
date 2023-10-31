@@ -3,16 +3,16 @@ import React, { useState, useEffect } from 'react';
 import '@/app/cadastro/style.css'
 import Link from 'next/link';
 import axios from 'axios';
-import { useRouter } from 'next/router';
-
-
-
+import { useRouter } from 'next/navigation';
+import Button from '../components/Button';
 
 const Cadastro: React.FC = () => {
     const [username, setUsername ] = useState('');
     const [email, setEmail] = useState('');
     const [socialName, setSocialName] = useState('');
     const [password, setPassword] = useState('');
+    const router = useRouter() 
+
 
     const dataUser = {
         username: username,
@@ -32,18 +32,21 @@ const Cadastro: React.FC = () => {
         })
         .catch((err) => alert(err))
     }
-
+    function routerTeste(){
+        router.push('login')
+    }
 
     return (
         <>
             <title>HeyDev | SignUp</title>
-            <section>
+            <section className='containerCadastro'>
                 <aside>
                     <h2>Bem-vindo!</h2>
                     <p>Já possui uma conta?</p>
-                    <Link href={'/login'} className='containerLink'><p>Sign In</p></Link>
+
+                    <button className='containerLink' onClick={() =>  routerTeste()}><p>Sign In</p></button>
                 </aside>
-                <main>
+                <div className='container-Principal'>
                     <h1>Junte-se a nós</h1>
                     <form action="">
                         <input type="text" placeholder='Nome' value={username} onChange={(e) => setUsername(e.target.value)} />
@@ -52,7 +55,7 @@ const Cadastro: React.FC = () => {
                         <input type="password" placeholder='Senha' value={password} onChange={(e) => setPassword(e.target.value)} />
                         <button onClick={handleRegister}>Sign Up</button>
                     </form>
-                </main>
+                </div>
             </section>
         </>
     )
